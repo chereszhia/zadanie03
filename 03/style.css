@@ -1,0 +1,221 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+  background-color: hsl(214, 17%, 92%);
+  min-height: 100vh;
+  padding: 70px 24px;
+}
+
+
+.karty {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+
+.lewa-czesc {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.prawa-czesc {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.rzad {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.karta {
+  border-radius: 8px;
+  padding: 26px 32px;
+  box-shadow: 0px 20px 40px -15px hsla(0, 0%, 0%, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.karta-naglowek {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+
+.karta-zdjecie {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid hsla(0, 0%, 100%, 0.3);
+}
+
+
+.karta-zdjecie-ramka-fiolet {
+  border-color: hsl(264, 82%, 80%);
+}
+
+
+.karta-imie {
+  font-size: 13px;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.2;
+}
+
+
+.karta-status {
+  font-size: 11px;
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.5);
+  line-height: 1.2;
+}
+
+
+
+.karta-tytul {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+
+.karta-tekst {
+  font-size: 13px;
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.7);
+  line-height: 1.5;
+}
+
+
+
+.karta-fioletowa {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url('./images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top 0 right 80px;
+}
+
+
+.karta-ciemna {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.karta-niebieska {
+  background-color: hsl(219, 29%, 14%);
+}
+
+
+.karta-biala {
+  background-color: hsl(0, 0%, 100%);
+}
+
+
+
+.karta-imie-ciemna {
+  color: hsl(217, 19%, 35%);
+}
+
+.karta-status-ciemna {
+  color: hsl(217, 19%, 35%);
+  opacity: 0.5;
+}
+
+.karta-tytul-ciemna {
+  color: hsl(217, 19%, 35%);
+}
+
+.karta-tekst-ciemna {
+  color: hsl(217, 19%, 35%);
+  opacity: 0.7;
+}
+
+
+
+.koniec {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.koniec a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+@media (min-width: 1000px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  
+  .karty {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+
+  .lewa-czesc {
+    flex: 3;
+    gap: 30px;
+  }
+
+
+  .prawa-czesc {
+    flex: 1;
+  }
+
+  .prawa-czesc .karta {
+    flex: 1;
+  }
+
+
+  .rzad {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  
+  .karta-szersza {
+    flex: 2;
+  }
+
+  
+  .rzad .karta {
+    flex: 1;
+  }
+
+
+  .rzad .karta-szersza {
+    flex: 2;
+  }
+}
